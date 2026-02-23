@@ -1,0 +1,91 @@
+/* src/app/globals.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --primary: #000000;
+  /* --secondary: #fc2526; */
+  --secondary: #1d1a27;
+  --ternary: #e53935;
+  --black: #000000;
+  --white: #ffffff;
+
+  --background: var(--white);
+  --foreground: var(--black);
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-ternary: var(--ternary);
+  --color-black: var(--black);
+  --color-white: var(--white);
+
+  --font-primary: "Exo", sans-serif;
+  /* --font-primary: "Google Sans", sans-serif; */
+  /* --font-primary: "Ubuntu", sans-serif; */
+  --font-poppins: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.primary_btn {
+  @apply inline-block cursor-pointer rounded-lg border border-transparent bg-blue-500 px-4 py-1.5 text-sm text-white transition-colors duration-300 ease-linear hover:border-blue-500 hover:bg-white hover:text-blue-500 2xl:px-6 2xl:py-2 2xl:text-base;
+}
+.secondary_btn {
+  @apply inline-block cursor-pointer rounded-lg border border-transparent bg-green-500 px-4 py-1.5 text-sm text-white transition-colors duration-300 ease-linear hover:border-green-500 hover:bg-white hover:text-green-500 2xl:px-6 2xl:py-2 2xl:text-base;
+}
+
+.input_field {
+  @apply w-full;
+}
+
+.textarea_field {
+  @apply w-full;
+}
+
+.lucide_icon {
+  @apply h-4 w-4;
+}
+
+.react_icon {
+  @apply h-4 w-4;
+}
+
+/* Heading */
+.car_h1 {
+  @apply text-5xl md:text-6xl lg:text-7xl font-semibold tracking-wide transition-all duration-300;
+}
+
+.car_h2 {
+  @apply text-3xl md:text-4xl font-bold tracking-wide transition-all duration-300;
+}
+
+.car_h3 {
+  @apply text-lg md:text-xl lg:text-3xl font-semibold tracking-wide transition-all duration-300;
+}
+
+.car_h4 {
+  @apply text-xl lg:text-2xl font-semibold tracking-wide transition-all duration-300;
+}
+
+.car_h5 {
+  @apply text-sm lg:text-lg font-semibold tracking-wide transition-all duration-300;
+}
+
+.car_h6 {
+  @apply text-xs lg:text-sm xl:text-xl transition-all duration-300;
+}
+
+.car_p {
+  @apply text-xs lg:text-sm transition-all duration-300;
+}
+
+.car_span {
+  @apply text-[8px] md:text-[10px] lg:text-xs transition-all duration-300;
+}

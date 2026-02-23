@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://scootylelo.com
+
+# Sitemaps
+Sitemap: https://scootylelo.com/sitemap.xml
