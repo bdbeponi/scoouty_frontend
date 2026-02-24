@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "scootybackend.picneed.com",
+        hostname: "backend.scootylelo.com",
         pathname: "/**",
       },
       {
