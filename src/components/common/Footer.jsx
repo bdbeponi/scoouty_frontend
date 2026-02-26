@@ -125,7 +125,7 @@ const Footer = () => {
               <p className="text-gray-300 leading-relaxed mb-6 text-sm lg:text-base">
                 <a
                   href="/"
-                  className="font-semibold text-gray-200 hover:text-secondary transition-colors"
+                  className="font-semibold text-gray-200 hover:text-white transition-colors"
                 >
                   scootylelo.com
                 </a>{" "}
@@ -174,9 +174,9 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     href={link.url}
-                    className="text-gray-300 hover:text-secondary transition-colors duration-300 flex items-center group"
+                    className="text-gray-300 hover:text-white transition-colors duration-300 flex items-center group"
                   >
-                    <span className="w-2 h-2 bg-gray-600 rounded-full mr-3 group-hover:bg-secondary transition-colors"></span>
+                    <span className="w-2 h-2 bg-gray-600 rounded-full mr-3 group-hover:bg-white transition-colors"></span>
                     {link.name}
                   </Link>
                 </li>
@@ -194,9 +194,9 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     href={vehicle.url}
-                    className="text-gray-300 hover:text-secondary transition-colors duration-300 flex items-center group"
+                    className="text-gray-300 hover:text-white transition-colors duration-300 flex items-center group"
                   >
-                    <span className="w-2 h-2 bg-gray-600 rounded-full mr-3 group-hover:bg-secondary transition-colors"></span>
+                    <span className="w-2 h-2 bg-gray-600 rounded-full mr-3 group-hover:bg-white transition-colors"></span>
                     {vehicle.name}
                   </Link>
                 </li>
@@ -281,7 +281,7 @@ const Footer = () => {
                           <li key={index}>
                             <Link
                               href={item.url}
-                              className="text-gray-300 hover:text-secondary transition-colors py-2 block"
+                              className="text-gray-300 hover:text-white transition-colors py-2 block"
                             >
                               {item.name}
                             </Link>
@@ -309,7 +309,7 @@ const Footer = () => {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-800 hover:bg-secondary p-2 rounded-full transition text-white text-sm"
+                className="bg-gray-800 hover:bg-white p-2 rounded-full transition text-white text-sm"
                 aria-label={social.name}
               >
                 {social.icon}

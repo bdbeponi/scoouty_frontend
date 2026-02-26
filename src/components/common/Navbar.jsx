@@ -30,7 +30,7 @@ export default function Navbar() {
       ?.brands?.map((brand) => ({
         name: brand.name,
         models: brand.productCount || 0,
-        href: `/scooty/${brand.slug}`,
+        href: `/scooters/${brand.slug}`,
       })) || [];
 
   return (
