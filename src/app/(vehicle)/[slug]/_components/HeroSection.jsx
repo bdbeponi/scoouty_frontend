@@ -333,6 +333,27 @@ const HeroSection = ({
                 </p>
               </div>
             </div>
+
+            {product.brochure && (
+              <div className="flex items-start gap-3 p-4 border border-gray-200 rounded-lg mt-2 hover:bg-gray-50">
+                {product?.brochure ? (
+                  <a
+                    href={`${baseUriBackend}${product.brochure}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 w-full transition-colors"
+                  >
+                    <span className="text-secondary">📄</span>
+                    <span className="font-medium">Download Brochure</span>
+                  </a>
+                ) : (
+                  <>
+                    <MapPin className="text-secondary" />
+                    <span>Available at Premium Showroom</span>
+                  </>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </div>
