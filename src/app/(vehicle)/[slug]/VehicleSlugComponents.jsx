@@ -18,6 +18,7 @@ import { useGetProductBySlugApiQuery } from "@/redux/features/productApi";
 import { useParams } from "next/navigation";
 import AuthorSection from "./_components/AuthorSection";
 import FAQSection from "./_components/FAQSection";
+import FeatureImageSection from "./_components/FeatureImageSection";
 
 const VehicleSlugComponents = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -32,6 +33,10 @@ const VehicleSlugComponents = () => {
   // Get gallery images from product data
   const galleryImages =
     product?.data?.galleryImages?.map((img) => `${baseUriBackend}${img}`) || [];
+
+  // Get Feature Images images from product data
+  const featureImages =
+    product?.data?.featureImages?.map((img) => `${baseUriBackend}${img}`) || [];
 
   // Get variations from product data
   const variations = product?.data?.variations || [];
@@ -94,6 +99,10 @@ const VehicleSlugComponents = () => {
           product={product?.data}
           isLoading={isLoading}
         />
+
+        {featureImages?.length > 0 && (
+          <FeatureImageSection featureImages={featureImages} />
+        )}
 
         {/* Sticky Tab Navigation */}
         <TabNavigation
