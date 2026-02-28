@@ -36,6 +36,10 @@ const BrandsSection = () => {
     setDesktopVisible(isDesktopExpanded ? initialDesktop : brands.length);
   };
 
+  if (Loading) {
+    return <p>Loading brands...</p>;
+  }
+
   return (
     <div className="rounded-xl overflow-hidden py-4">
       {/* Mobile & Tablet */}
