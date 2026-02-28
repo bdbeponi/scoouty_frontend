@@ -7,7 +7,7 @@ const FeaturedBrands = () => {
   const info = {
     title: "Brands",
     sub_title: "Find your perfect brands",
-    link: "/brand",
+    link: "/scooters",
   };
 
   return (
