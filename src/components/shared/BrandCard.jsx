@@ -4,7 +4,7 @@ import Link from "next/link";
 const BrandCard = ({ brand }) => {
   return (
     <Link
-      href={`/brand/${brand.slug}`}
+      href={`/scooters/${brand.slug}`}
       className="flex flex-col items-center justify-center gap-2 p-4 border border-gray-100 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 "
     >
       <Image
