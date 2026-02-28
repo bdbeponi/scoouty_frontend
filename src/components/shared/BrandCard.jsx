@@ -31,7 +31,7 @@ const BrandCard = ({ brand }) => {
       </div>
 
       <span className="text-sm text-gray-700 font-medium">
-        {brand.name} Name 2
+        {brand.name} Name 3
       </span>
     </Link>
   );
