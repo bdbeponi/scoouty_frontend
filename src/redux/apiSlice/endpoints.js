@@ -261,11 +261,20 @@ export const endpoints = {
     createEmail: "create-email",
   },
 
+  // Comment endpoints
   comments: {
     createComment: "create-comment",
     getBlogCommentsById: "blog-comment",
   },
 
+  // Review endpoints
+  review: {
+    postReview: "create-review",
+    getReview: "get-all-reviews",
+    productReviewById: "get-reviews-by-product",
+  },
+
+  // Author endpoints
   author: {
     getAuthorById: "author-profile",
   },

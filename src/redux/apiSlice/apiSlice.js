@@ -47,6 +47,7 @@ export const apiSlice = createApi({
     "Power",
     "Gearbox",
     "Brakes",
+    "Review",
   ],
   endpoints: () => ({}),
 });
