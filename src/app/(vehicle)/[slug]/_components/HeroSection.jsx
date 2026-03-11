@@ -255,7 +255,7 @@ const HeroSection = ({
                       <FaRoad className="text-purple-600" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-500">On-Road Price</p>
+                      <p className="text-sm text-gray-500">On Road Price</p>
                       <p className="text-lg font-bold text-gray-900">
                         {formatPrice(product.onRoadPrice) || "N/A"}
                       </p>
