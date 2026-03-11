@@ -55,7 +55,7 @@ const SingleAuthor = () => {
 
                   {author?.is_active && (
                     <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
-                      Active
+                      active
                     </span>
                   )}
                 </div>
