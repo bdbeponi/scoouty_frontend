@@ -1,0 +1,39 @@
+# robots.txt for https://scootylelo.com
+
+User-agent: *
+Allow: /
+
+# Block sensitive/system paths
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+Disallow: /tmp/
+
+# Allow important content sections explicitly
+Allow: /news/
+Allow: /brands/
+Allow: /vehicle/
+Allow: /images/
+
+# Google News specific crawler
+User-agent: Googlebot-News
+Allow: /news/
+
+# Image crawler
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Sitemaps
+Sitemap: https:///sitemap.xml
+Sitemap: https:///sitemap-static.xml
+Sitemap: https:///sitemap-news.xml
+Sitemap: https:///sitemap-brands.xml
+Sitemap: https:///sitemap-vehicle.xml
+Sitemap: https:///sitemap-images.xml
+Sitemap: https:///sitemap-authors.xml
+Sitemap: https:///sitemap-filters.xml
+
+# Host (main domain)
+Host: meragadi.com
