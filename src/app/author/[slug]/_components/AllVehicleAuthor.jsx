@@ -13,11 +13,6 @@ const AllVehicleAuthor = ({ createBy }) => {
 
   const { data: category } = useGetAllCategoryQuery();
 
-  const carCoverImage =
-    category?.data[2].cover && category?.data[2].cover !== "default.png"
-      ? `${baseUriBackend}${category?.data[2].cover}`
-      : "/scooters/s1.jpg";
-
   const products = (product?.data?.products || []).map((item) => ({
     id: item.id || item._id,
     name: item.name || item.productName_en || "Unnamed Product",
