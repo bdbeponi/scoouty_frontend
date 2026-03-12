@@ -66,8 +66,8 @@ const HomeCarousel = () => {
           >
             Welcome to{" "}
             <span className="text-ternary font-semibold">Scooty Lelo</span> —
-            Bangladesh’s trusted scooty marketplace. Compare brands, explore
-            features, and ride smart with{" "}
+            India trusted scooty marketplace. Compare brands, explore features,
+            and ride smart with{" "}
             <span className="text-ternary font-semibold">scootylelo.com</span>
           </motion.p>
 
