@@ -7,8 +7,9 @@ import ReduxProvider from "@/redux/reduxProvider/ReduxProvider";
 import { Toaster } from "sonner";
 
 export const metadata = {
-  title: "Scooty Lelo",
-  description: "Scooty Lelo Website",
+  title: "Scooty Lelo – Latest Scooty News, Prices, Colors & Specs",
+  description:
+    "Stay updated with the latest scooty models! Get news, prices, colors, features, specs, and expert reviews on Scooty Lelo.",
   // verification: {
   //   google: "dVhkHySBvxmgD8mQ1EkTdyUEEqG_0utMRjcaaUtIe9A",
   // },
