@@ -40,32 +40,7 @@ const FeatureImageSection = ({ featureImages = [] }) => {
 
   const closeModal = () => {
     setSelectedImageIndex(null);
-    document.body.style.overflow = "unset";
-  };
-
-  // Handle keyboard escape key
-  React.useEffect(() => {
-    const handleEsc = (e) => {
-      if (e.key === "Escape" && selectedImageIndex !== null) {
-        closeModal();
-      }
-    };
-    window.addEventListener("keydown", handleEsc);
-    return () => window.removeEventListener("keydown", handleEsc);
-  }, [selectedImageIndex]);
-
-  const goToPrevious = (e) => {
-    e.stopPropagation();
-    setSelectedImageIndex((prev) =>
-      prev > 0 ? prev - 1 : featureImages.length - 1,
-    );
-  };
-
-  const goToNext = (e) => {
-    e.stopPropagation();
-    setSelectedImageIndex((prev) =>
-      prev < featureImages.length - 1 ? prev + 1 : 0,
-    );
+    document.body.style.overflow = "unset"; 
   };
 
   return (
@@ -173,34 +148,16 @@ const FeatureImageSection = ({ featureImages = [] }) => {
       {/* Modal for full image view */}
       {selectedImageIndex !== null && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/95 p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
           onClick={closeModal}
         >
-          {/* Close button - Top Right */}
+          {/* Close button */}
           <button
             onClick={closeModal}
-            className="absolute top-4 right-4 z-[10000] bg-black/70 hover:bg-black/90 text-white p-3 rounded-full transition-all duration-200 shadow-lg backdrop-blur-sm border border-white/20"
+            className="absolute top-4 right-4 z-50 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-200"
             aria-label="Close modal"
           >
             <X className="w-6 h-6" />
-          </button>
-
-          {/* Previous Button */}
-          <button
-            onClick={goToPrevious}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-[10000] bg-black/70 hover:bg-black/90 text-white p-3 rounded-full transition-all duration-200 shadow-lg backdrop-blur-sm border border-white/20"
-            aria-label="Previous image"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-
-          {/* Next Button */}
-          <button
-            onClick={goToNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-[10000] bg-black/70 hover:bg-black/90 text-white p-3 rounded-full transition-all duration-200 shadow-lg backdrop-blur-sm border border-white/20"
-            aria-label="Next image"
-          >
-            <ChevronRight className="w-6 h-6" />
           </button>
 
           {/* Image container */}
@@ -220,18 +177,9 @@ const FeatureImageSection = ({ featureImages = [] }) => {
           </div>
 
           {/* Image counter in modal */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 text-white px-4 py-2 rounded-full text-sm backdrop-blur-sm border border-white/20">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-sm">
             {selectedImageIndex + 1} / {featureImages.length}
           </div>
-
-          {/* Additional close button at bottom (optional but adds convenience) */}
-          <button
-            onClick={closeModal}
-            className="absolute bottom-4 right-4 z-[10000] bg-black/70 hover:bg-black/90 text-white px-6 py-2 rounded-full transition-all duration-200 shadow-lg backdrop-blur-sm border border-white/20 text-sm font-medium"
-            aria-label="Close modal"
-          >
-            Close
-          </button>
         </div>
       )}
     </>
