@@ -1,23 +1,20 @@
 export const metadata = {
-  title: "About Meragadi.com | Trusted Vehicle News, Updates & Reviews",
+  title: "About scootylelo.com | Trusted Vehicle News, Updates & Reviews",
   description:
-    "Learn about Meragadi.com – your dedicated source for car, bike, scooter, and cycle news, launches, and updates in India.",
+    "Learn about scootylelo.com – your dedicated source for car, bike, scooter, and cycle news, launches, and updates in India.",
   keywords: [
-    "Meragadi",
+    "scootylelo",
     "vehicle news",
-    "car news",
-    "bike news",
     "scooter news",
-    "cycle news",
     "vehicle launches",
     "Indian automotive",
   ],
   openGraph: {
-    title: "About Meragadi.com",
+    title: "About scootylelo.com",
     description:
-      "Meragadi.com provides the latest updates, launches, specifications, and highlights for cars, bikes, scooters, and cycles in India.",
-    url: "https://meragadi.com/about-us",
-    siteName: "Meragadi",
+      "Scootylelo.com provides the latest updates, launches, specifications, and highlights for cars, bikes, scooters, and cycles in India.",
+    url: "https://scootylelo.com/about-us",
+    siteName: "scootylelo",
     type: "website",
   },
 };
@@ -30,8 +27,8 @@ export default function AboutUsPage() {
         <div className="max-w-[1200px] mx-auto px-4 py-16 lg:py-24 mt-20">
           <h1 className="text-4xl lg:text-5xl font-extrabold mb-6">About Us</h1>
           <p className="text-lg text-gray-300 max-w-3xl">
-            Meragadi.com is a dedicated news blog focused entirely on the world
-            of vehicles. We bring our readers the latest and most accurate
+            Scootylelo.com is a dedicated news blog focused entirely on the
+            world of vehicles. We bring our readers the latest and most accurate
             information about cars, bikes, scooters, and cycles that are
             launching or coming soon to the Indian market.
           </p>
@@ -47,11 +44,11 @@ export default function AboutUsPage() {
         {/* What We Do */}
         <div className="bg-white rounded-xl shadow-sm p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            What We Do at Meragadi.com
+            What We Do at scootylelo.com
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            At Meragadi.com, we publish the latest car, bike, scooter, and cycle
-            launches, upcoming vehicle news and updates, key features,
+            At scootylelo.com, we publish the latest car, bike, scooter, and
+            cycle launches, upcoming vehicle news and updates, key features,
             specifications, and highlights, and easy-to-understand information
             for buyers and enthusiasts.
           </p>
@@ -78,8 +75,8 @@ export default function AboutUsPage() {
           </h2>
           <p className="text-gray-700 leading-relaxed">
             My name is <strong>Sanjit Das</strong>, and I am the founder of
-            Meragadi.com. I am from Sonapur, Guwahati, Assam, and I created this
-            platform to share reliable and useful vehicle information with
+            scootylelo.com. I am from Sonapur, Guwahati, Assam, and I created
+            this platform to share reliable and useful vehicle information with
             readers across India.
           </p>
         </div>
@@ -104,32 +101,32 @@ export default function AboutUsPage() {
             to reach out to us.
           </p>
           <p className="text-gray-700">
-            Email: <strong>meragadi.com@gmail.com</strong>
+            Email: <strong>scootylelo.com@gmail.com</strong>
             <br />
-            Business Email: <strong>contact@meragadi.com</strong>
+            Business Email: <strong>contact@scootylelo.com</strong>
           </p>
         </div>
 
         {/* Why Trust */}
         <div className="bg-white rounded-xl shadow-sm p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Why Trust Meragadi.com
+            Why Trust Scootylelo.com
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Meragadi.com focuses only on vehicle-related content, uses simple
+            Scootylelo.com focuses only on vehicle-related content, uses simple
             and reader-friendly language, provides regular updates on new and
             upcoming vehicles, and follows a clean, honest, and professional
             approach.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Thank you for visiting Meragadi.com and being part of our journey.
+            Thank you for visiting Scootylelo.com and being part of our journey.
           </p>
         </div>
 
         {/* Closing */}
         <div className="bg-gray-900 text-white rounded-xl p-8 text-center">
           <p className="mb-2">
-            Thank you for fueling your passion with Meragadi.com.
+            Thank you for fueling your passion with Scootylelo.com.
           </p>
           <p className="font-semibold">
             Buckle up, stay informed, and enjoy the ride.

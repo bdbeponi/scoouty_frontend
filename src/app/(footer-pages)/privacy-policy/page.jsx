@@ -1,13 +1,13 @@
 export const metadata = {
-  title: "Privacy Policy | Meragadi.com",
+  title: "Privacy Policy | scootylelo.com",
   description:
-    "Read Meragadi.com's Privacy Policy to understand how we collect, use, and protect your personal data while browsing vehicle news, launches, and updates.",
+    "Read scootylelo.com's Privacy Policy to understand how we collect, use, and protect your personal data while browsing vehicle news, launches, and updates.",
   openGraph: {
-    title: "Privacy Policy | Meragadi.com",
+    title: "Privacy Policy | scootylelo.com",
     description:
-      "Learn how Meragadi.com handles user data, cookies, analytics, and third-party services in a transparent and secure manner.",
-    url: "https://meragadi.com/privacy-policy",
-    siteName: "Meragadi",
+      "Learn how scootylelo.com handles user data, cookies, analytics, and third-party services in a transparent and secure manner.",
+    url: "https://scootylelo.com/privacy-policy",
+    siteName: "scootylelo",
     type: "website",
   },
 };
@@ -32,13 +32,13 @@ export default function PrivacyPolicyPage() {
         {/* Intro */}
         <div className="bg-white rounded-xl shadow-sm p-8">
           <p className="text-gray-700 leading-relaxed mb-4">
-            At <strong>Meragadi.com</strong>, we value your privacy and are
+            At <strong>scootylelo.com</strong>, we value your privacy and are
             committed to protecting any information you share with us. This
             Privacy Policy document explains how we collect, use, and safeguard
             your information when you visit our website.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            By using <strong>Meragadi.com</strong>, you agree to the terms
+            By using <strong>scootylelo.com</strong>, you agree to the terms
             outlined in this Privacy Policy.
           </p>
         </div>
@@ -84,7 +84,7 @@ export default function PrivacyPolicyPage() {
         <div className="bg-white rounded-xl shadow-sm p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Cookies</h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            Meragadi.com may use cookies to store information about visitors’
+            scootylelo.com may use cookies to store information about visitors’
             preferences and to optimize the experience by customizing our web
             page content based on visitors’ browser type or other information.
           </p>
@@ -100,13 +100,13 @@ export default function PrivacyPolicyPage() {
             Third-Party Services
           </h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            Meragadi.com may use third-party services such as Google Analytics
+            scootylelo.com may use third-party services such as Google Analytics
             or advertising partners. These third parties may use cookies,
             JavaScript, or web beacons to collect information in accordance with
             their own privacy policies.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Meragadi.com has no control over these cookies used by third-party
+            scootylelo.com has no control over these cookies used by third-party
             services.
           </p>
         </div>
@@ -117,7 +117,7 @@ export default function PrivacyPolicyPage() {
             Third-Party Privacy Policies
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            Meragadi.com’s Privacy Policy does not apply to other advertisers or
+            scootylelo.com Privacy Policy does not apply to other advertisers or
             websites. We advise you to consult the respective Privacy Policies
             of third-party services or websites for more detailed information
             about their practices.
@@ -130,7 +130,7 @@ export default function PrivacyPolicyPage() {
             Children’s Information
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            Meragadi.com does not knowingly collect any personal information
+            scootylelo.com does not knowingly collect any personal information
             from children under the age of 13. If you believe that your child
             has provided personal information on our website, please contact us
             immediately, and we will take necessary action to remove such
@@ -165,7 +165,7 @@ export default function PrivacyPolicyPage() {
             Updates to This Policy
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            Meragadi.com may update this Privacy Policy from time to time. Any
+            scootylelo.com may update this Privacy Policy from time to time. Any
             changes will be posted on this page, and we encourage users to
             review this policy periodically.
           </p>
@@ -175,10 +175,10 @@ export default function PrivacyPolicyPage() {
         <div className="bg-gray-900 text-white rounded-xl p-8">
           <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
           <p>
-            Email: <strong>meragadi.com@gmail.com</strong>
+            Email: <strong>scootylelo.comgmail.com</strong>
           </p>
           <p>
-            Business Email: <strong>contact@meragadi.com</strong>
+            Business Email: <strong>contact@scootylelo.com</strong>
           </p>
           <p>
             Office Address:

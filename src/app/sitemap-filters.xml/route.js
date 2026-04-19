@@ -5,19 +5,23 @@ export const revalidate = 0;
 
 import { NextResponse } from "next/server";
 
-const baseUrl = "https://meragadi.com";
+const baseUrl = "https://scootylelo.com";
 
 function escapeXml(unsafe) {
-  return unsafe
-    .replace(/[<>&'"]/g, (c) => {
-      switch (c) {
-        case "<": return "&lt;";
-        case ">": return "&gt;";
-        case "&": return "&amp;";
-        case "'": return "&apos;";
-        case '"': return "&quot;";
-      }
-    });
+  return unsafe.replace(/[<>&'"]/g, (c) => {
+    switch (c) {
+      case "<":
+        return "&lt;";
+      case ">":
+        return "&gt;";
+      case "&":
+        return "&amp;";
+      case "'":
+        return "&apos;";
+      case '"':
+        return "&quot;";
+    }
+  });
 }
 
 export async function GET() {
@@ -25,8 +29,8 @@ export async function GET() {
     const today = new Date().toISOString();
 
     const res = await fetch(
-      "https://backend.meragadi.com/api/v1/sitemap-filter-urls",
-      { cache: "no-store" }
+      "https://backend.scootylelo.com/api/v1/sitemap-filter-urls",
+      { cache: "no-store" },
     );
 
     if (!res.ok) {
@@ -62,7 +66,7 @@ export async function GET() {
     <lastmod>${new Date(u.lastmod).toISOString()}</lastmod>
     <changefreq>daily</changefreq>
     <priority></priority>
-  </url>`
+  </url>`,
       )
       .join("");
 

@@ -1,12 +1,12 @@
 export const metadata = {
-  title: "Disclaimer | Meragadi.com",
+  title: "Disclaimer | scootylelo.com",
   description:
-    "Read the Meragadi.com Disclaimer to understand content accuracy, limitations, third-party links, and liability related to vehicle news and reviews.",
+    "Read the scootylelo.com Disclaimer to understand content accuracy, limitations, third-party links, and liability related to vehicle news and reviews.",
   openGraph: {
-    title: "Disclaimer | Meragadi.com",
+    title: "Disclaimer | scootylelo.com",
     description:
-      "Meragadi.com publishes car, bike, scooter, and cycle news and reviews for informational purposes only. Learn about our content limitations and responsibilities.",
-    url: "https://meragadi.com/disclaimer",
+      "scootylelo.com publishes car, bike, scooter, and cycle news and reviews for informational purposes only. Learn about our content limitations and responsibilities.",
+    url: "https://scootylelo.com/disclaimer",
     siteName: "Meragadi",
     type: "website",
   },
@@ -32,14 +32,14 @@ export default function DisclaimerPage() {
         {/* Intro */}
         <div className="bg-white rounded-xl shadow-sm p-8">
           <p className="text-gray-700 leading-relaxed mb-4">
-            The information provided on <strong>Meragadi.com</strong> is for
+            The information provided on <strong>scootylelo.com</strong> is for
             general informational purposes only. All content published on this
             website relates to cars, bikes, scooters, and cycles, including
             news, upcoming launches, features, and specifications.
           </p>
           <p className="text-gray-700 leading-relaxed">
             While we strive to keep the information accurate and up to date,
-            <strong>Meragadi.com</strong> makes no warranties or guarantees
+            <strong>scootylelo.com</strong> makes no warranties or guarantees
             about the completeness, reliability, or accuracy of any information
             on this website.
           </p>
@@ -52,7 +52,7 @@ export default function DisclaimerPage() {
           </h2>
           <p className="text-gray-700 leading-relaxed mb-3">
             Vehicle prices, specifications, features, availability, and launch
-            details mentioned on <strong>Meragadi.com</strong> are based on
+            details mentioned on <strong>scootylelo.com</strong> are based on
             official announcements, media reports, and trusted sources at the
             time of publishing. These details may change without prior notice.
           </p>
@@ -69,13 +69,13 @@ export default function DisclaimerPage() {
             No Professional Advice
           </h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            The content on <strong>Meragadi.com</strong> does not constitute
+            The content on <strong>scootylelo.com</strong> does not constitute
             professional, legal, financial, or technical advice. Any action you
             take based on the information found on this website is strictly at
             your own risk.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            <strong>Meragadi.com</strong> will not be liable for any losses,
+            <strong>scootylelo.com</strong> will not be liable for any losses,
             damages, or issues arising from the use of our content.
           </p>
         </div>
@@ -86,7 +86,7 @@ export default function DisclaimerPage() {
             External Links
           </h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            <strong>Meragadi.com</strong> may contain links to external websites
+            <strong>scootylelo.com</strong> may contain links to external websites
             for additional information. We do not control or take responsibility
             for the content, accuracy, or policies of any third-party websites.
           </p>
@@ -101,7 +101,7 @@ export default function DisclaimerPage() {
             Content Responsibility
           </h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            All opinions expressed on <strong>Meragadi.com</strong> are personal
+            All opinions expressed on <strong>scootylelo.com</strong> are personal
             views based on research and publicly available information. We do
             not intend to harm or misrepresent any brand, company, or
             individual.
@@ -125,10 +125,10 @@ export default function DisclaimerPage() {
         <div className="bg-gray-900 text-white rounded-xl p-8">
           <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
           <p>
-            Email: <strong>meragadi.com@gmail.com</strong>
+            Email: <strong>scootylelo.com@gmail.com</strong>
           </p>
           <p>
-            Business Email: <strong>contact@meragadi.com</strong>
+            Business Email: <strong>contact@scootylelo.com</strong>
           </p>
         </div>
       </section>

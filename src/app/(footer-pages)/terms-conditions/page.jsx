@@ -1,22 +1,19 @@
 export const metadata = {
-  title: "Terms and Conditions | Meragadi.com",
+  title: "Terms and Conditions | scootylelo.com",
   description:
-    "Read the Terms and Conditions for using Meragadi.com, your trusted source for vehicle news, updates, and reviews.",
+    "Read the Terms and Conditions for using scootylelo.com, your trusted source for vehicle news, updates, and reviews.",
   keywords: [
-    "Meragadi",
+    "Scootylelo",
     "Terms and Conditions",
     "vehicle news",
-    "car news",
-    "bike news",
     "scooter news",
-    "cycle news",
     "website policies",
   ],
   openGraph: {
-    title: "Terms and Conditions - Meragadi.com",
+    title: "Terms and Conditions - scootylelo.com",
     description:
-      "Meragadi.com Terms and Conditions for accessing and using our vehicle news and information platform.",
-    url: "https://meragadi.com/terms-and-conditions",
+      "scootylelo.com Terms and Conditions for accessing and using our vehicle news and information platform.",
+    url: "https://scootylelo.com/terms-and-conditions",
     siteName: "Meragadi",
     type: "website",
   },
@@ -32,7 +29,7 @@ export default function TermsAndConditionsPage() {
             Terms and Conditions
           </h1>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-            Welcome to Meragadi.com. By accessing and using this website, you
+            Welcome to scootylelo.com. By accessing and using this website, you
             agree to comply with and be bound by the following Terms and
             Conditions. If you do not agree with any part of these terms, please
             do not use our website.
@@ -48,7 +45,7 @@ export default function TermsAndConditionsPage() {
             Use of Website
           </h2>
           <p className="text-gray-700 leading-relaxed mb-2">
-            Meragadi.com is a news and information blog focused on cars, bikes,
+            scootylelo.com is a news and information blog focused on cars, bikes,
             scooters, and cycles. The content provided is for general
             informational purposes only.
           </p>
@@ -64,9 +61,9 @@ export default function TermsAndConditionsPage() {
             Intellectual Property Rights
           </h2>
           <p className="text-gray-700 leading-relaxed mb-2">
-            Unless otherwise stated, all content published on Meragadi.com,
+            Unless otherwise stated, all content published on scootylelo.com,
             including text, images, logos, and design, is the property of
-            Meragadi.com and is protected by applicable copyright laws.
+            scootylelo.com and is protected by applicable copyright laws.
           </p>
           <p className="text-gray-700 leading-relaxed">
             You may not copy, reproduce, republish, or redistribute any content
@@ -80,7 +77,7 @@ export default function TermsAndConditionsPage() {
             Content Accuracy
           </h2>
           <p className="text-gray-700 leading-relaxed mb-2">
-            We make every effort to ensure that the information on Meragadi.com
+            We make every effort to ensure that the information on scootylelo.com
             is accurate and up to date. However, we do not guarantee the
             completeness, reliability, or accuracy of any content.
           </p>
@@ -97,8 +94,8 @@ export default function TermsAndConditionsPage() {
             User Responsibility
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            Any action you take based on the information found on Meragadi.com
-            is strictly at your own risk. Meragadi.com will not be liable for
+            Any action you take based on the information found on scootylelo.com
+            is strictly at your own risk. scootylelo.com will not be liable for
             any losses, damages, or issues arising from the use of our website
             or content.
           </p>
@@ -110,7 +107,7 @@ export default function TermsAndConditionsPage() {
             External Links
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            Meragadi.com may include links to third-party websites for
+            scootylelo.com may include links to third-party websites for
             additional information. We do not control or endorse the content or
             practices of these external websites and are not responsible for any
             damages or losses caused by visiting them.
@@ -141,7 +138,7 @@ export default function TermsAndConditionsPage() {
             Limitation of Liability
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            Meragadi.com, its owner, and team shall not be held responsible for
+            scootylelo.com, its owner, and team shall not be held responsible for
             any direct or indirect loss or damage arising from the use of this
             website.
           </p>
@@ -153,7 +150,7 @@ export default function TermsAndConditionsPage() {
             Changes to Terms
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            Meragadi.com reserves the right to update or modify these Terms and
+            scootylelo.com reserves the right to update or modify these Terms and
             Conditions at any time without prior notice. Changes will be
             effective immediately once posted on this page.
           </p>
@@ -181,9 +178,9 @@ export default function TermsAndConditionsPage() {
             may contact us at:
           </p>
           <p className="text-gray-700">
-            Email: <strong>meragadi.com@gmail.com</strong>
+            Email: <strong>scootylelo.com</strong>
             <br />
-            Business Email: <strong>contact@meragadi.com</strong>
+            Business Email: <strong>contact@scootylelo.com</strong>
             <br />
             Office Address:
             <br />
