@@ -54,7 +54,7 @@ export const productApi = apiSlice.injectEndpoints({
         } = params;
 
         return {
-          url: `${endpoints.Product.getListProduct}?page=${page}&limit=${limit}&search=${search}&category=${category}&brand=${brand}&discount=${discount}&minPrice=${minPrice}&maxPrice=${maxPrice}&is_active=${is_active}&flashSale=${flashSale}&trending=${trending}&topSelling=${topSelling}&newArrival=${newArrival}`,
+          url: `${endpoints.Product.getListProduct}?page=${page}&limit=${limit}&search=${search}&category=${category}&brands=${brand}&discount=${discount}&minPrice=${minPrice}&maxPrice=${maxPrice}&is_active=${is_active}&flashSale=${flashSale}&trending=${trending}&topSelling=${topSelling}&newArrival=${newArrival}`,
           method: "GET",
         };
       },
