@@ -51,7 +51,7 @@ export const searchApi = apiSlice.injectEndpoints({
 
         // Filter parameters
         const filterParams = {
-          brand,
+          brands: brand,
           weight,
           size,
           bodyType,
