@@ -120,8 +120,8 @@ export async function generateMetadata({ params }) {
             ? description.substring(0, 197) + "..."
             : description,
         images: [ogImage],
-        creator: "@Meragadi",
-        site: "@Meragadi",
+        creator: "@scootylelo",
+        site: "@scootylelo",
       },
 
       // Canonical URL

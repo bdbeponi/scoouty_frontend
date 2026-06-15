@@ -125,10 +125,10 @@ export default function DisclaimerPage() {
         <div className="bg-gray-900 text-white rounded-xl p-8">
           <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
           <p>
-            Email: <strong>scootylelo.com@gmail.com</strong>
+            Email: <strong>scootylelo01@gmail.com</strong>
           </p>
           <p>
-            Business Email: <strong>contact@scootylelo.com</strong>
+            Business Email: <strong>scootylelo01@gmail.com</strong>
           </p>
         </div>
       </section>

@@ -178,7 +178,7 @@ export default function PrivacyPolicyPage() {
             Email: <strong>scootylelo.comgmail.com</strong>
           </p>
           <p>
-            Business Email: <strong>contact@scootylelo.com</strong>
+            Business Email: <strong>scootylelo01@gmail.com</strong>
           </p>
           <p>
             Office Address:

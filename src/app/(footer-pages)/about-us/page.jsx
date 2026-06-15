@@ -101,9 +101,9 @@ export default function AboutUsPage() {
             to reach out to us.
           </p>
           <p className="text-gray-700">
-            Email: <strong>scootylelo.com@gmail.com</strong>
+            Email: <strong>scootylelo01@gmail.com</strong>
             <br />
-            Business Email: <strong>contact@scootylelo.com</strong>
+            Business Email: <strong>scootylelo01@gmail.com</strong>
           </p>
         </div>
 

@@ -39,9 +39,9 @@ export default function ContactUsPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Emails</h2>
           <p className="text-gray-700 mb-1">Connect with us at:</p>
           <p className="text-gray-900 font-medium mb-2">
-            scootylelo.com@gmail.com
+            scootylelo01@gmail.com
           </p>
-          <p className="text-gray-900 font-medium">contact@scootylelo.com</p>
+          <p className="text-gray-900 font-medium">scootylelo01@gmail.com</p>
         </div>
 
         {/* Office Address */}

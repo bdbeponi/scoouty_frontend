@@ -180,7 +180,7 @@ export default function TermsAndConditionsPage() {
           <p className="text-gray-700">
             Email: <strong>scootylelo.com</strong>
             <br />
-            Business Email: <strong>contact@scootylelo.com</strong>
+            Business Email: <strong>scootylelo01@gmail.com</strong>
             <br />
             Office Address:
             <br />
