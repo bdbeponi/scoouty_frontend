@@ -157,6 +157,29 @@ const WorkingTableHeader = TableHeader.extend({
   },
 });
 
+// Custom Table extension with responsive wrapper
+const ResponsiveTable = Table.extend({
+  renderHTML({ HTMLAttributes }) {
+    return [
+      "div",
+      {
+        class: "table-responsive-wrapper",
+        style:
+          "width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1rem 0;",
+      },
+      [
+        "table",
+        {
+          ...HTMLAttributes,
+          class: `${HTMLAttributes.class || ""} responsive-table`,
+          style: "min-width: 100%; border-collapse: collapse; width: 100%;",
+        },
+        ["tbody", 0],
+      ],
+    ];
+  },
+});
+
 // Simple Background Color extension - FIXED VERSION
 const BackgroundColor = TextStyle.extend({
   name: "backgroundColor",
@@ -694,8 +717,12 @@ export default function RichTextEditor({
       FontFamily, // Custom extension for font family
       Link.configure({
         openOnClick: false,
+        autolink: true,
+        linkOnPaste: true,
         HTMLAttributes: {
           class: "text-blue-600 hover:underline",
+          rel: "noopener noreferrer nofollow",
+          target: "_blank",
         },
       }),
       BlockImage.configure({
@@ -706,8 +733,8 @@ export default function RichTextEditor({
           draggable: "true",
         },
       }),
-      Table.configure({
-        resizable: true,
+      ResponsiveTable.configure({
+        resizable: false, // Disable resizable since we're handling it differently
         HTMLAttributes: {
           class: "border-collapse border border-gray-300 w-full my-4",
         },
@@ -719,13 +746,14 @@ export default function RichTextEditor({
       }),
       WorkingTableCell.configure({
         HTMLAttributes: {
-          class: "border border-gray-300 px-4 py-2 align-top min-w-[100px]",
+          class:
+            "border border-gray-300 px-2 md:px-4 py-2 align-top min-w-[50px] md:min-w-[100px] break-words",
         },
       }),
       WorkingTableHeader.configure({
         HTMLAttributes: {
           class:
-            "border border-gray-300 bg-gray-50 px-4 py-2 font-semibold align-top",
+            "border border-gray-300 bg-gray-50 px-2 md:px-4 py-2 font-semibold align-top break-words",
         },
       }),
       TextAlign.configure({
@@ -1276,6 +1304,24 @@ export default function RichTextEditor({
         style = document.createElement("style");
         style.id = styleId;
         style.textContent = `
+/* Link styling for nested content */
+.ProseMirror a.text-blue-600 * {
+  color: inherit !important;
+  text-decoration: inherit !important;
+}
+
+.ProseMirror a.text-blue-600:hover * {
+  text-decoration: underline !important;
+}
+
+/* Ensure links are properly colored */
+.ProseMirror a {
+  color: #2563eb !important;
+  text-decoration: underline !important;
+}
+
+  
+
           /* Table styling */
           .ProseMirror table {
             border-collapse: collapse;
@@ -1671,6 +1717,95 @@ export default function RichTextEditor({
           .clear-format-btn:hover {
             background: #dc2626;
           }
+
+          /* Responsive Table Styles */
+.table-responsive-wrapper {
+  width: 100% !important;
+  overflow-x: auto !important;
+  margin: 1rem 0 !important;
+  -webkit-overflow-scrolling: touch !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 0.375rem !important;
+}
+
+.responsive-table {
+  min-width: 600px !important; /* Minimum width for scrolling on mobile */
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+/* Responsive table cells */
+.responsive-table td,
+.responsive-table th {
+  min-width: 100px !important;
+  max-width: 300px !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+  padding: 0.75rem !important;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .responsive-table {
+    min-width: 500px !important;
+  }
+  
+  .responsive-table td,
+  .responsive-table th {
+    padding: 0.5rem !important;
+    font-size: 0.875rem !important;
+    min-width: 80px !important;
+  }
+  
+  .table-responsive-wrapper {
+    margin-left: -0.5rem !important;
+    margin-right: -0.5rem !important;
+    border-radius: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .responsive-table {
+    min-width: 400px !important;
+  }
+  
+  .responsive-table td,
+  .responsive-table th {
+    padding: 0.375rem !important;
+    font-size: 0.8125rem !important;
+    min-width: 60px !important;
+  }
+}
+
+/* Hide table scrollbar on desktop when not needed */
+.table-responsive-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-responsive-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.table-responsive-wrapper::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.table-responsive-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Ensure text breaks properly in tables */
+.ProseMirror td,
+.ProseMirror th {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+}
         `;
         document.head.appendChild(style);
       }
